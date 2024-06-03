@@ -7,8 +7,7 @@ request('https://dog.ceo/api/breeds/image/random', function(error, response, bod
 if(!error&& response.statusCode == 200) {
 const data= JSON.parse(body);
 res.json(data);
-}
-});
+}});
 })
 
 module.exports= router;
